@@ -75,7 +75,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_title_entry_window"
-		size = { width = 320 height = 26 }
+		size = { width = 260 height = 24 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -83,20 +83,20 @@ guiTypes = {
 		buttonType = {
 			name = "background"
 			id = "background"
-			quadTextureSprite = "GFX_zfolk_glow_green"
+			quadTextureSprite = "GFX_glow_tile_line"
 			clicksound = outliner_click_tab
-			size = { x = 256 y = 28 }
-			position = { x = 0 y = 2 }
+			size = { x = 256 y = 24 }
+			position = { x = 0 y = 6 }
 		}
 
 		instantTextBoxType = {
 			name = "title"
 			font = "cg_16b"
 			text = ""
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 6 }
 			maxWidth = 256
 			maxHeight = 20
-			fixedSize = no
+			fixedSize = yes
 			orientation = "UPPER_LEFT"
 			format = center
 			text_color_code = "H"
@@ -107,22 +107,23 @@ guiTypes = {
 			name = "amount"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 210 y = 7 }
+			position = { x = -44 y = 6 }
 			maxWidth = 32
 			maxHeight = 20
 			fixedSize = yes
-			orientation = "UPPER_LEFT"
+			orientation = "UPPER_RIGHT"
 			format = right
 		}
 
 		smoothListBoxType = {
 			name = "list"
 			id = "list"
-			position = { x = 2 y= 28 }
+			position = { x = 0 y = 28 }
 			orientation = "UPPER_LEFT"
 			priority = 100
-			size = { x = 320 y = 0 }
-			borderSize = { x=0 y=0 }
+			size = { x = 256 y = 0 }
+			borderSize = { x = 0 y = 0 }
+			spacing = 0
 			scrollbartype = "standardlistbox_slider"
 			alwaystransparent = yes
 		}
@@ -130,7 +131,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_observation_post_entry_window"
-		size = { width = 318 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -153,11 +154,10 @@ guiTypes = {
 			}
 		}
 
-		# XXX test remove
 		iconType = {
-			name ="observation_post_icon"
+			name = "observation_post_icon"
 			spriteType = "GFX_ship_class_medium"
-			position = { x= 1000 y = 5 }
+			position = { x = 1000 y = 5 }
 			alwaysTransparent = yes
 			frame = 13
 			scale = 0.9
@@ -167,7 +167,7 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
+			position = { x = 28 y = 1 }
 			maxWidth = 162
 			maxHeight = 20
 			fixedSize = yes
@@ -192,7 +192,7 @@ guiTypes = {
 
 		iconType = {
 			name = "mission_icon"
-			position = { x = 8 y = 0 }
+			position = { x = 4 y = 0 }
 			spriteType = "GFX_observation_mission_small"
 		}
 
@@ -219,7 +219,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_rallypoint_window"
-		size = { width = 318 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -245,7 +245,7 @@ guiTypes = {
 
 		iconType = {
 			name = "planet"
-			position = { x = 10 y = 0 }
+			position = { x = 6 y = 0 }
 			spriteType = "GFX_planet_type"
 			frame = 1
 			alwaysTransparent = yes
@@ -254,7 +254,7 @@ guiTypes = {
 
 		iconType = {
 			name = "fleet"
-			position = { x = 11 y = 1 }
+			position = { x = 7 y = 1 }
 			spriteType = "GFX_ship_class_medium"
 			frame = 15
 			alwaysTransparent = yes
@@ -265,8 +265,8 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
-			maxWidth = 130
+			position = { x = 28 y = 1 }
+			maxWidth = 140
 			maxHeight = 20
 			fixedSize = yes
 			orientation = "UPPER_LEFT"
@@ -279,20 +279,20 @@ guiTypes = {
 			name = "location"
 			font = "cg_16b"
 			text = ""
-			position = { x = -200 y = 1 }
-			maxWidth = 120
+			position = { x = -82 y = 1 }
+			maxWidth = 74
 			maxHeight = 20
 			fixedSize = yes
 			orientation = "UPPER_RIGHT"
 			format = right
-			text_color_code = "E"
+			text_color_code = "g"
 			alwaysTransparent = yes
 		}
 	}
 
 	containerWindowType = {
 		name = "outliner_member_army_entry_window"
-		size = { width = 318 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -318,7 +318,7 @@ guiTypes = {
 
 		iconType = {
 			name = "planet_type"
-			position = { x = 10 y = 0 }
+			position = { x = 6 y = 0 }
 			spriteType = "GFX_planet_type"
 			frame = 1
 			alwaysTransparent = yes
@@ -340,7 +340,7 @@ guiTypes = {
 
 		iconType = {
 			name = "fleet_status"
-			position = { x = 8 y = 0 }
+			position = { x = 4 y = 0 }
 			spriteType = "GFX_zfolk_fleet_status_icon"
 			frame = 20
 			alwaysTransparent = yes
@@ -360,7 +360,7 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
+			position = { x = 28 y = 1 }
 			maxWidth = 118
 			maxHeight = 19
 			fixedSize = yes
@@ -412,7 +412,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_fleet_civilian_entry_window"
-		size = { width = 318 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -420,7 +420,7 @@ guiTypes = {
 		buttonType = {
 			name = "background"
 			quadTextureSprite = "GFX_outliner_member_small_bg"
-			position = { x = -1 y = -5 }
+			position = { x = 0 y = -5 }
 			orientation = "UPPER_LEFT"
 			clicksound = click_outliner
 		}
@@ -428,7 +428,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "selected_overlay"
 			position = { x = 0 y = 0 }
-			size = { width = 248 height = 100% }
+			size = { width = 256 height = 100% }
 			background = {
 				name = "selected_bg"
 				spriteType = "GFX_glow_tile_orange_no_padding"
@@ -438,18 +438,18 @@ guiTypes = {
 
 		iconType = {
 			name = "fleet_status"
-			position = { x = 8 y = 0 }
+			position = { x = 4 y = 0 }
 			spriteType = "GFX_zfolk_fleet_status_icon"
 			frame = 20
 			scale = 0.70
 		}
 
 		instantTextBoxType = {
-			name = "name"
+			name = "type"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 1000 y = 16 }
-			maxWidth = 130
+			position = { x = 28 y = 1 }
+			maxWidth = 158
 			maxHeight = 20
 			fixedSize = yes
 			orientation = "UPPER_LEFT"
@@ -459,22 +459,24 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "type"
+			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
-			maxWidth = 130
+			position = { x = -82 y = 1 }
+			maxWidth = 74
 			maxHeight = 20
 			fixedSize = yes
-			orientation = "UPPER_LEFT"
-			format = left
-			text_color_code = "E"
+			orientation = "UPPER_RIGHT"
+			format = right
+			text_color_code = "g"
 			alwaysTransparent = yes
 		}
+
+		# Hidden
 		instantTextBoxType = {
 			name = "location"
 			font = "cg_16b"
-			text = ""
+			text = "100"
 			position = { x = 100 y = 1 }
 			maxWidth = 80
 			maxHeight = 20
@@ -483,9 +485,10 @@ guiTypes = {
 			format = right
 			alwaysTransparent = yes
 		}
+
 		iconType = {
 			name = "progress"
-			position = { x = -120 y = 5 }
+			position = { x = -54 y = 6 }
 			orientation = "UPPER_RIGHT"
 			spriteType = "GFX_outliner_planet_construction_progressbar"
 			frame = 50
@@ -494,7 +497,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_disabled_alert_entry_window"
-		size = { width = 318 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -502,14 +505,14 @@ guiTypes = {
 		buttonType = {
 			name = "background"
 			quadTextureSprite = "GFX_outliner_member_small_bg"
-			position = { x = -1 y = -5 }
+			position = { x = 0 y = -5 }
 			orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
 			name = "alerticon"
 			spriteType = "GFX_alerticons"
-			position = { x= 11 y = 1 }
+			position = { x = 7 y = 1 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.52
 		}
@@ -518,8 +521,8 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
-			maxWidth = 200
+			position = { x = 28 y = 1 }
+			maxWidth = 230
 			maxHeight = 20
 			fixedSize = yes
 			orientation = "UPPER_LEFT"
@@ -531,7 +534,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_pop_faction_entry_window"
-		size = { width = 318 height = 34 }
+		size = { width = 256 height = 34 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -640,7 +643,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_sector_entry_window"
-		size = { width = 248 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -648,7 +651,7 @@ guiTypes = {
 		buttonType = {
 			name = "background"
 			quadTextureSprite = "GFX_outliner_member_small_bg"
-			position = { x = -1 y = -5 }
+			position = { x = 0 y = -5 }
 			orientation = "UPPER_LEFT"
 		}
 
@@ -656,7 +659,7 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
+			position = { x = 28 y = 1 }
 			maxWidth = 118
 			maxHeight = 19
 			fixedSize = yes
@@ -669,7 +672,7 @@ guiTypes = {
 		buttonType = {
 			name = "cycle_colonies"
 			quadTextureSprite = "GFX_colonies"
-			position = { x = 6 y = 0 }
+			position = { x = 4 y = 0 }
 			scale = 0.74
 		}
 
@@ -719,7 +722,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_member_terraforming_entry_window"
-		size = { width = 318 height = 20 }
+		size = { width = 256 height = 20 }
 		position = { x = 0 y = 0 }
 		orientation = upper_right
 		moveable = no
@@ -727,14 +730,14 @@ guiTypes = {
 		buttonType = {
 			name = "background"
 			quadTextureSprite = "GFX_outliner_member_small_bg"
-			position = { x = -1 y = -5 }
+			position = { x = 0 y = -5 }
 			clicksound = "click_outliner"
 		}
 
 		containerWindowType = {
 			name = "selected_overlay"
 			position = { x = 0 y = 0 }
-			size = { width = 248 height = 100% }
+			size = { width = 256 height = 100% }
 			background = {
 				name = "selected_bg"
 				spriteType = "GFX_glow_tile_orange_no_padding"
@@ -744,7 +747,7 @@ guiTypes = {
 
 		iconType = {
 			name = "type_start"
-			position = { x = 10 y = 0 }
+			position = { x = 6 y = 0 }
 			spriteType = "GFX_planet_type"
 			frame = 1
 			alwaysTransparent = yes
@@ -755,7 +758,7 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "0"
-			position = { x = 32 y = 1 }
+			position = { x = 28 y = 1 }
 			maxWidth = 310
 			maxHeight = 19
 			fixedSize = yes
@@ -780,7 +783,7 @@ guiTypes = {
 
 		iconType = {
 			name = "type_target"
-			position = { x = -94 y = 0 }
+			position = { x = -82 y = 0 }
 			spriteType = "GFX_planet_type"
 			frame = 1
 			alwaysTransparent = yes
@@ -790,9 +793,10 @@ guiTypes = {
 
 		iconType = {
 			name = "progress_bar"
-			position = { x = -140 y = 5 }
+			position = { x = -54 y = 6 }
 			orientation = "UPPER_RIGHT"
 			spriteType = "GFX_outliner_planet_construction_progressbar"
+			alwaysTransparent = yes
 			frame = 50
 		}
 	}
