@@ -168,7 +168,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "0"
 			position = { x = 28 y = 1 }
-			maxWidth = 162
+			maxWidth = 168
 			maxHeight = 20
 			fixedSize = yes
 			orientation = "UPPER_LEFT"
@@ -198,7 +198,7 @@ guiTypes = {
 
 		iconType = {
 			name = "progress"
-			position = { x = -120 y = 4 }
+			position = { x = -54 y = 6 }
 			orientation = "upper_right"
 			spriteType = "GFX_outliner_planet_construction_progressbar"
 			frame = 50
@@ -457,6 +457,9 @@ guiTypes = {
 			text_color_code = "E"
 			alwaysTransparent = yes
 		}
+
+		# vertical_alignment = center
+		# pdx_tooltip = "ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE_DESC"
 
 		instantTextBoxType = {
 			name = "name"
